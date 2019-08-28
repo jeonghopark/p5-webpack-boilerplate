@@ -5,12 +5,15 @@
     "jest": true,
     "node": true
   },
-  "extends": ["eslint:recommended"],
+  "extends": [
+    "eslint:recommended"
+  ],
   "parser": "babel-eslint",
   "parserOptions": {
     "sourceType": "module",
     "ecmaFeatures": {
-      "experimentalObjectRestSpread": true
+      "experimentalObjectRestSpread": true,
+      "jsx": true
     }
   },
   "plugins": ["jest"],
@@ -26,14 +29,8 @@
         "varsIgnorePattern": "^_|[Ii]gnored|[Nn]otUsed"
       }
     ],
-    "react/jsx-no-bind": ["off"],
-    "react/jsx-uses-vars": ["error"],
-    "react-native/no-inline-styles": ["off"],
-    "react-native/no-unused-styles": ["off"],
-    "react-native/split-platform-components": ["error"],
     "semi": ["off", "always"],
 
-    "react/prop-types": ["off"],
     "no-undef": ["off"]
   }
 }
