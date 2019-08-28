@@ -47,6 +47,10 @@ const sketch = p5 => {
   // ======================================
   p5.draw = () => {
     p5.background("#111");
+    for (let i = 0; i<100; i++) {
+      p5.ellipse(p5.random(canvasWidth), p5.random(canvasHeight), p5.random(10));
+    }
+    stats.update();
   };
 };
 
